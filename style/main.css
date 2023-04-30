@@ -142,19 +142,49 @@ filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
 .content__profile-panel{
+
   padding-top: 15px;
   padding-right: 40px;
-  margin-left: auto;
+ 
   display: flex;
+flex-wrap: wrap;
+  align-items: center;
+  align-content: start;
+  margin-left: auto;
+
 }
 
 .content__profile-bell, .content__profile-cart{
   margin-right: 16px;
+  
 }
+
 .content__profile-userPic{
   width: 48px;
   height: 48px;
   margin: auto;
+}
+
+.content_profile-notification{
+  
+  text-align: center;
+  width: 15px;
+  height: 15px;
+
+  
+  transform: translateX(-25px);
+
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+
+  /* Purple Light */
+
+  color: #DA00FE;
+  padding: 2px 3.5px 3px 4.5px;
+  background: #FFFFFF;
+  border-radius: 200px;
 }
 
 .content__slider{
@@ -177,6 +207,7 @@ filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
 .content__ref-ul{
+  cursor: pointer;
   font-weight: 500;
 font-size: 10px;
 line-height: 12px;
@@ -198,6 +229,8 @@ gap: 8px;
   background-position-x: 8px;
 }
 
+
+
 .content__ref-li{
   padding: 8px 24px;
   border: 1px solid #8A8A8A;
@@ -208,7 +241,7 @@ gap: 8px;
   color: #FFFFFF;
 }
 
-.content__ref-li:hover{
+.content__ref-li:not(:last-child):hover{
   background: #A100ED;
   border: 1px solid #A100ED;;
 }
@@ -299,6 +332,7 @@ font-size: 10px;
 line-height: 12px;  
 color: #FFFFFF;
 }
+
 .add-to-cart-ico{
   transform: translateY(-5px);
 }
